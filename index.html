@@ -8,6 +8,7 @@
     <meta name="keywords" content="aulas, educação, homeschooling, escola, professora, criança, patos de minas, brasil">
     <meta name="desciption" content="Raiane é professora particular para crianças, confira os serviçoes prestados e o contato! ">
     <link rel="stylesheet" href="raiane.css">
+    <link rel="stylesheet" href="style.css">
     <script src="raiane.js"></script>
     <title>Raiane Aulas Particulares</title>
     <link rel="icon" type="image/x-icon" href="/img/icon.ico">
@@ -15,9 +16,9 @@
 <body>
     <header>
         <figure>
-            <img src="img/logo.png" alt="Logo Raiane Aulas">
+            <img src="img/logo.png" alt="Logo Raiane Aulas" class="logo">
         </figure>
-        <nav>
+        <nav id="navegacao">
             <ul>
                 <li><a href="#bemvindo">Bem Vindo</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -29,36 +30,38 @@
     <main>
         <section id="bemvindo">
             <figure>
-                <img src="img/raiane.jpg" alt="Foto da professora Raiane">
+                <img src="img/raiane.jpg" alt="Foto da professora Raiane" id="profilePhoto">
             </figure>
-            <h1>Raiane Nunes</h1>
-            <h2>Professora de primeiro grau particular</h2>
-            <p>Whatsapp: (34) 9999-9999</p>
-            <p>Email: raiane@gmail.com</p>
+            <div>
+                <h1>Raiane Nunes</h1>
+                <h2>Professora de primeiro grau particular</h2>
+                <p>Whatsapp: (34) 9999-9999</p>
+                <p>Email: raiane@gmail.com</p>
+            </div>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
             <p>Professora infantil formada em pedagogia, 5 anos de experiencia com crianças e jovens</p>
         </section>
-        <section id="#galeria">
+        <section id="galeria">
             <h2>Galeria de fotos</h2>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                   <div class="numbertext">1 / 3</div>
-                  <img src="img/img1.jpg" style="width:100%">
-                  <div class="text">Caption Text</div>
+                  <img src="img/img1.jpg" style="width:100%" alt="foto escolar">
+                  <div class="text">Segurança</div>
                 </div>
               
                 <div class="mySlides fade">
                   <div class="numbertext">2 / 3</div>
-                  <img src="img/img2.jpg" style="width:100%">
-                  <div class="text">Caption Two</div>
+                  <img src="img/img2.jpg" style="width:100%" alt="Foto escolar">
+                  <div class="text">Aprendizado</div>
                 </div>
               
                 <div class="mySlides fade">
                   <div class="numbertext">3 / 3</div>
-                  <img src="img/img3.jpg" style="width:100%">
-                  <div class="text">Caption Three</div>
+                  <img src="img/img3.jpg" style="width:100%" alt="Foto escolar">
+                  <div class="text">Carinho</div>
                 </div>
               
                 <!-- Next and previous buttons -->
@@ -84,7 +87,7 @@
             <li><a href=""></a><img src="img/Twitter.webp" alt="Twitter"target="_blank"></li>
             <li><a href=""><img src="img/whatsapp.png" alt="Whatsapp"target="_blank"></a></li>
         </ul>
-        <button type="button"><a href="#top">Voltar ao Inicio</a></button>
+        <button><a href="#top">Voltar ao Inicio</a></button>
     </footer>
 </body>
 </html>
