@@ -18,6 +18,13 @@ p{
   font: 1.5em "Fira Sans";
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 1px;
+  margin-inline-end: 1px;
+}
 header {
         display: flex;
         align-items: center;
@@ -32,8 +39,8 @@ header {
     margin-left: -20px;
 }
 .logo {
-    margin: 0px;
-    padding: 0px;
+    margin: -20px;
+    padding: -20px;
     width: 80%;
     height: auto;
     overflow: hidden;
@@ -53,7 +60,7 @@ header {
   }
   
   .topmenu a {
-    display: block;
+    display: inline-block;
     color: #002a6c;
     text-align: center;
     padding: 16px;
@@ -73,10 +80,14 @@ header {
         justify-content: center;
   }
   #profilePhoto{
-    width: auto;
-    height: 600px;
+    width: 70%;
+    height: auto%;
     overflow: hidden;
-    max-height: fit-content;
+    padding: -20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
   }
   #experiencia{
     background-image: url("img/fundozaul.webp");
@@ -117,7 +128,9 @@ header {
   .media{
     width: 200px;
     height: auto;
-    float: left;
+    float: none;
+    display: inline-block;
+    text-align: center;
     list-style-type: none;
   }
   .media img{
