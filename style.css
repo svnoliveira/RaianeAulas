@@ -12,18 +12,41 @@ h3{
   color: #080808;
   font: 1.8em, italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 12px;
 }
 p{
   color: #002a6c;
   font: 1.5em "Fira Sans";
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 12px;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 figure {
-  display: block;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 1px;
   margin-inline-end: 1px;
+}
+.responsiveimage{
+  width: 50%;
+  height: 100%;
 }
 header {
         display: flex;
@@ -70,24 +93,24 @@ header {
   .topmenu a:hover {
     background-color: rgb(238, 224, 207);
   }
+  div {
+    display: flex;
+    flex-direction: column;
+  }
   #bemvindo{
     display: flex;
     padding-top: 7%;
     padding-bottom: 7%;
         align-items: center;
         text-align: left;
-        min-height: 10vh;
+        height: auto;
         justify-content: center;
+        flex-wrap: wrap
   }
   #profilePhoto{
-    width: 70%;
-    height: auto%;
-    overflow: hidden;
-    padding: -20px;
-    margin-top: -20px;
-    margin-bottom: -20px;
-    margin-right: -20px;
-    margin-left: -20px;
+    max-width: fit-content;
+    height: auto;
+
   }
   #experiencia{
     background-image: url("img/fundozaul.webp");
@@ -130,14 +153,13 @@ header {
     padding: 16px;
   }
   .media{
-    width: 200px;
+    width: auto;
     height: auto;
-    float: none;
-    display: inline-block;
     text-align: center;
     list-style-type: none;
+    padding: 20px;
   }
   .media img{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 50px;
+    max-height: 50px;
   }
