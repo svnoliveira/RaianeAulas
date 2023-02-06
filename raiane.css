@@ -44,11 +44,11 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #fce7cf;
   font-size: 18px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 20px;
   width: 100%;
   text-align: center;
 }
